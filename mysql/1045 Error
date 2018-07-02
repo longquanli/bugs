@@ -3,7 +3,7 @@ ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: N
 ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
 
 Ways:
-1.find mysqld.cnf first, etc/mysql/mysql.conf.d as path
+1.find mysqld.cnf first, /etc/mysql/mysql.conf.d as path
 2. vi path and add one line “skip-grant-tables” under [mysqld]
 3. service mysql restart
 $ mysql
