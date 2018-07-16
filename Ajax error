@@ -1,0 +1,32 @@
+About http 200 error
+Description: there are two outcomes after form transfer information, success and error. Sometimes, we will get an special error when http is 200.
+Reason: This is because we always use template format to initilize ajax with dataType json. When we do not need any return data or the return
+data type is not as same as json. This will happen.
+Solution: change this
+$.ajax({
+       type: "post",
+       url: "index.php",
+       data: "id="+uid,
+       dataType:"json",
+       success : function(){
+              alert(1);
+       },
+       error: function(){
+              alert(0);
+       }
+});
+
+to:
+
+$.ajax({
+       type: "post",
+       url: "index.php",
+       data: "id="+uid,
+       success : function(){
+              alert(1);
+       },
+       error: function(){
+              alert(0);
+       }
+});
+or add a dictionary return type for python
