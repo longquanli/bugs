@@ -1,0 +1,48 @@
+This essay is used to record the process of deploying my personal blog at Amazon AWS EC2.
+
+AWS EC2 account and instance.
+  Step 1:
+  Create AWS EC2 account.
+  Step 2:
+  Build a EC2 instance with ubuntu.
+  Step 3:
+  Input SSH key and download .pem file.
+  Step 4:
+  Edit inbound rules, Port number 22 with my IP and 80 with anywhere.
+
+Connection with server using PuTTY
+  Step 1:
+  Download PuTTY and install.
+  Step 2:
+  Transfer .pem file with puttygen.exe.
+  Step 3:
+  Config SSH and Host Name then save session.
+
+WinSCP
+  Step 1:
+  Download and install.
+  Step 2:
+  Config python web environment.
+  Step 3:
+  Install python 3.6 and pip at Ubuntu16.04
+  Step 4:
+  Install Nginx, Supervisor, Mysql.
+  Step 5:
+  Connect server to database using Navicat.
+  Step 6:
+  Install jinja2, aiomysql, aiohttp
+
+Deploy
+  Step 1:
+  Install Fabric
+  Step 2:
+  Config with ssh
+
+Add https
+
+Reference link: https://blog.xujiaji.com/post/python_server_deploy
+
+   
+   
+
+  
