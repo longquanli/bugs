@@ -1,0 +1,19 @@
+Config Supervisor:
+1> must use pip to install, open python and type import supervisor to check
+#output the default config file
+2> echo_supervisord_conf > /etc/supervisord.conf
+3> create own sub-config and add path in [include]
+4> sudo supervisord -c path(config)
+5> sudo supervisorctl -c path(config)
+6> sudo supervisorctl reload
+7> sudo supervisorctl start program name
+8> sudo supervisorctl status
+
+some command:
+#check current supervisord process
+1> ps aux | grep supervisord
+2> sudo kill -s SIGTERM number
+
+Reference link:
+http://liyangliang.me/posts/2015/06/using-supervisor/
+https://blog.csdn.net/wangjianwanxiao/article/details/51007354
