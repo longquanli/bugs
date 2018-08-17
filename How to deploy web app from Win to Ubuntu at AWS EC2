@@ -34,21 +34,22 @@ WinSCP
 
 Deploy
   Step 1:
-  Install Fabric
+  Install Fabric: it is used to build zip file and transfer to promote server supervisor.
   Step 2:
-  Config with ssh
-  Step 3:
   Config supervisor:
   (1) sudo apt-get install supervisor
   (2) config *.conf file
   (3) chmod 777 path
   (4) sudo supervisord -c path (*.conf)
   (5) sudo supervisorctl -c *.conf start all
+  Step 3:
+  Config nginx: as a proxy server to deploy web app.
 
 Add https
 
-Reference link: https://blog.xujiaji.com/post/python_server_deploy
-
+Reference link: 
+https://blog.xujiaji.com/post/python_server_deploy
+http://pinkyjie.com/2011/04/09/build-nginx_webpy_on_amazon_ec2/
    
    
 
