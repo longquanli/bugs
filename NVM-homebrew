@@ -1,0 +1,7 @@
+brew install nvm
+mkdir ~/.nvm
+Nano ~/.bash_profile
+  1) export NVM_DIR=~/.nvm
+  2) source $(brew --prefix nvm)/nvm.sh
+source ~/.bash_profile
+echo $NVM_DIR
