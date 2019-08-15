@@ -7,6 +7,7 @@ Q: Can not find bra command after installing it for Go.
   ```
   
   to ~/.bashrc
+
 2. Add
 
   ```javascript
